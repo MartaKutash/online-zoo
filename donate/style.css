@@ -195,7 +195,6 @@ h1 {
 	height: 862px;
 	width: 976px;
 	border-radius: 0px;
-
 	margin: 0 auto;
 	position: absolute;
 }
@@ -225,6 +224,12 @@ h1 {
 
 }
 
+.panda_block {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
 .amount_of_days {
 	height: 58px;
 	width: 82px;
@@ -244,12 +249,12 @@ h1 {
 	margin-left: 200px;
 }
 
-.pick_friend .x_icon {
+.x_icon {
 	height: 14px;
 	width: 14px;
 	color: black;
-	margin-left: 483px;
-	margin-top: -40px;
+	margin-left: 50px;
+	margin-top: 190px;
 }
 
 .animal_widget {
@@ -274,7 +279,7 @@ h1 {
 	line-height: 22px;
 	letter-spacing: 0em;
 	text-align: left;
-	margin-top: 98px;
+	margin-top: 60px;
 
 }
 
@@ -282,8 +287,16 @@ h1 {
 	margin-left: 92px;
 	height: 40px;
 	width: 976px;
-	margin-top: 10px;
+	margin-top: 5px;
 	top: 493px;
+}
+
+.price {
+	margin-left: 92px;
+	margin-top: 6px;
+	height: 36px;
+	width: 991px;
+
 }
 
 .form_input {
