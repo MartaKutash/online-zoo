@@ -935,5 +935,6 @@ ul .soc_med {
     font-weight: 100;
     line-height: 21px;
     color: white;
-    margin: auto;
+    margin-left: 1152px;
+    padding-bottom: 50px;
 }
