@@ -16,6 +16,7 @@ div {
 
 .main_wrapper {
 	min-width: 100%;
+	width: 1600px;
 }
 
 .header {
@@ -411,11 +412,12 @@ input[type='radio']:checked {
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 600px (max-width: 1600px)) {
 	.main_wrapper, .header, .footer {
 		width: 100%;
 }
 }
+
 
 footer {
 	min-width: 100%;
