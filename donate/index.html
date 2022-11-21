@@ -59,19 +59,30 @@
 									</div>
 								<div class="scroll">
 									<p>Amount</p>
-									<img class="prog_bar" src="../assets/images/progress_bar.png" alt="progress_bar">
+									<img class="prog_bar" src="../assets/images/progress_bar.png" alt="progress_bar" usemap="#slider-map">
+									<map name="slider-map">
+										<area shape="circle" coords="30,20,20" href="" alt="$5000" onclick="return false;">
+										<area shape="circle" coords="160,20,20" href="" alt="$1000" onclick="return false;">
+										<area shape="circle" coords="290,20,20" href="" alt="$500" onclick="return false;">
+										<area shape="circle" coords="420,20,20" href="" alt="$250" onclick="return false;">
+										<area shape="circle" coords="550,20,20" href="" alt="$100" onclick="return false;">
+										<area shape="circle" coords="680,20,20" href="" alt="$50" onclick="return false;">
+										<area shape="circle" coords="810,20,20" href="" alt="$25" onclick="return false;">
+									</map>
 									<img class="price" src="../assets/images/price.png" alt="price">
-										<div class="form_input">
-											<form class="form_amount">
-												<input id="text" type="number" placeholder="Another amount          $"
-													   class="form-subscription-input" autocomplete="off" required>
-											</form>
+									<div class="form_input">
+										<input id="text" type="number" placeholder="Another amount" class="amount_input" autocomplete="off" required="">
+											<span class="currency_suffix">$</span>
 										</div>
 										<div class="type_radio">
-											<input type="radio" id="monthly" name="monthly">
-											<label for="monthly">Monthly</label>
-											<input type="radio" id="once" name="once">
-											<label for="once">Once</label>
+											<div class="input_group">
+												<input type="radio" id="monthly" name="period">
+												<label class="amount_radio_label" for="monthly">Monthly</label>
+											</div>
+											<div class="input_group">
+												<input type="radio" id="once" name="period" checked="">
+												<label class="amount_radio_label" for="once">Once</label>
+											</div>
 										</div>
 										<div class="feed_a_friend">
 											<a href="#"><img src="../assets/icons/btn_2 (1).png" alt="feed_a_friend"></a>
@@ -86,22 +97,34 @@
 				</div>
 
 			</section>
-			<section class="footer">
-			<div class="footer-content">
-				<div class="footer-col">
-					<div class="logo_footer">
+			<footer>
+				<div class="footer-content">
+					<div class="footer_logo">
 						<a href="../index.html"><img src="/assets/icons/logo_footer.png" alt="footer_logo"></a>
 					</div>
-					<a class="btn_donate" href="../donate/#">
-						<img src="assets/icons/donate_for_vol.png" alt="donate_for_vol">
-					</a>
-					<div class="soc_media">
-						<a href="https://www.facebook.com/index.php"><img src="assets/icons/facebook.png" alt="facebook"></a>
-						<a href="twitter.com"><img src="assets/icons/twitter.png" alt="twitter"></a>
-						<a href="www.instagram.com/Instagram"><img src="assets/icons/instagram.png" alt="instagram"></a>
-						<a href="https://www.youtube.com/"><img src="assets/icons/youtube.png" alt="youtube"></a>
+					<div class="btn_donate"><a href="../donate/#"><img src="/assets/icons/donate_for_vol.png" alt="donate_for_vol"></a></div>
+					<div class="list_soc_media">
+					<ul class="soc_media">
+						<li class="soc_media_item"><a class="icon" href="https://www.facebook.com/index.php"><img src="../assets/icons/facebook.png" alt="fb_icon"></a></li>
+						<li class="soc_media_item"><a class="icon" href="twitter.com"><img src="/assets/icons/twitter.png" alt="twitter"></a></li>
+						<li class="soc_media_item"><a class="icon" href="www.instagram.com/Instagram"><img src="/assets/icons/instagram.png" alt="instagram"></a></li>
+						<li class="soc_media_item"><a class="icon" href="https://www.youtube.com/"><img src="/assets/icons/youtube.png" alt="youtube"></a></li>
+					</ul></div>
+					<div class="footer_nav_menu">
+						<ul class="menu_footer">
+							<li class="menu_footer_item"><a href="../online-zoo/">About</a></li>
+							<li class="menu_footer_item">
+								<a href="#!" class="footer_nav">Map</a>
+							</li>
+							<li class="menu_footer_item">
+								<a href="#!" class="footer_nav">Zoos</a>
+							</li>
+							<li class="menu_footer_item">
+								<a href="#!" class="footer_nav">Contact us</a>
+							</li>
+						</ul>
 					</div>
-				</div>
+				<div class="sign">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
 				<div class="footer-col">
 					<label id="subscribe" class="subscribe" for="email">Subscribe to our news</label>
 					<form class="form-subscription">
@@ -110,25 +133,8 @@
 						<button class="send_btn"><a class="btn_submit" href="#">Submit</a></button>
 					</form>
 				</div>
-			</div>
-			<!--<div class="btn_vol">-->
-		<div class="footer_nav_menu">
-				<ul class="menu_footer">
-					<li class="menu_footer_item_about">About</li>
-					<li class="menu_footer_item">
-						<a href="#!" class="footer_nav">Map</a>
-					</li>
-					<li class="menu_footer_item">
-						<a href="#!" class="footer_nav">Zoos</a>
-					</li>
-					<li class="menu_footer_item">
-						<a href="#!" class="footer_nav">Contact us</a>
-					</li>
-				</ul>
-			</div>
-		<div class="sign">Designed by Alisa Samborskaya</div>
-			<div class="sign">©RSSchool & ©Yem Digital 2021</div>
-		</section>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

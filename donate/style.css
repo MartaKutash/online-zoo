@@ -186,7 +186,8 @@ h1 {
 	text-align: left;
 	color: #FE9013;
 	margin-top: 40px;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
+	margin-left: 176px;
 }
 
 .inner {
@@ -209,7 +210,7 @@ h1 {
 
 .pick_friend h2 {
 	margin-top: 40px;
-	margin-left: 250px;
+	margin-left: 342px;
 	height: 58px;
 	width: 463px;
 	font-size: 48px;
@@ -243,7 +244,7 @@ h1 {
 	width: 82px;
 	left: 253px;
 	top: 272px;
-	margin-left: 353px;
+	margin-left: 345px;
 	margin-top: 165px;
 
 }
@@ -254,7 +255,7 @@ h1 {
 	font-weight: 400;
 	line-height: 22.4px;
 	margin-top: -55px;
-	margin-left: 200px;
+	margin-left: 215px;
 }
 
 .x_icon {
@@ -268,14 +269,14 @@ h1 {
 .animal_widget {
 	height: 246px;
 	width: 284px;
-	margin-left: 543px;
+	margin-left: 555px;
 	margin-top: -167px;
 }
 
 .scroll p {
 	height: 22px;
 	width: 57px;
-	left: 4px;
+	margin-left: 92px;
 	top: 461px;
 	font-size: 16px;
 	font-weight: 400;
@@ -308,15 +309,32 @@ h1 {
 }
 
 .form_input {
+	display: inline-block;
+	position: relative;
 	height: 54px;
 	width: 468px;
 	margin-left: 450px;
 	margin-top: 50px;
-	border-radius: 0px;
+	margin-bottom: 11px;
+	border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
 }
 
 .type_radio {
 	margin-left: 452px;
+	width: 228px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .monthly {
@@ -326,8 +344,51 @@ h1 {
 	width: 84px;
 }
 
-#once {
-	margin-left: 50px;
+.amount_input {
+	padding: 5px;
+    margin-top: 14px;
+    border: 1px solid #919191;
+    border-radius: 2px;
+    outline: transparent;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #919191;
+    background-color: inherit;
+    height: 42px;
+    width: 228px;
+	font-family: inherit;
+}
+
+.currency_suffix {
+	margin-left: -20px;
+}
+
+input[type='radio'] {
+	appearance: none;
+	background-color: inherit;
+	width: 1em;
+	height: 1em;
+	border: 0.1em solid #FE9013;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+input[type='radio']:checked {
+	background-color: #FE9013;
+	font-size: 16px;
+}
+
+.amount_radio_label {
+	font-family: inherit;
+	font-weight: 200;
+}
+
+.input_group {
+	display: flex;
+	width: 90px;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
 }
 
 .feed_a_friend {
@@ -349,22 +410,24 @@ h1 {
 	text-align: left;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    height: 443px;
-    min-width: 100%;
-    background-color: #111115;
-    ;
+
+@media screen and (max-width: 1600px) {
+	.main_wrapper, .header, .footer {
+		width: 100%;
+}
+}
+
+footer {
+	min-width: 100%;
+	background-color: #111115;
+	position: absolute;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 1160px;
-    margin: 0 auto 0;
-    padding: 5px;
+	height: 443px;
+	width: 1600px;
+	left: 0px;
+	top: 1948px;
 }
 
 .footer-content .footer-col {
@@ -372,18 +435,83 @@ h1 {
     flex-direction: column;
 }
 
-.footer-content .footer-col .float-right {
-    align-content: end;
-}
-
-.logo_footer {
-    height: 52px;
-    width: 82px;
-    margin-top: 41px;
+.footer_logo {
+	height: 52px;
+	width: 82px;
+	margin-left: 220px;
+	margin-top: 41px;
 }
 
 .btn_donate {
-    margin-top: 68px;
+	height: 54px;
+	width: 298px;
+	margin-left: 220px;
+	margin-top: 68px;
+}
+
+.soc_media {
+	display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+	margin-left: 180px;
+	list-style: none;
+	height: 26px;
+	width: 111px;
+	display: block;
+}
+
+.soc_media_item {
+	height: 26px;
+	width: 111px;
+	margin-top: 10px;
+}
+
+.icon :hover {
+	background: green;
+}
+
+.footer-icons img {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_vol {
+    position: absolute;
+    height: 54px;
+    width: 298px;
+    margin-left: 220px;
+    margin-top: 171px;
+}
+
+.menu_footer {
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 480px;
+	margin-left: 519px;
+	margin-top: 101px;
+}
+
+.menu_footer_item a {
+	margin-left: 58px;
+	text-decoration: none;
+	color: white;
+}
+
+.menu_footer_item a:hover{
+	color: orange;
+}
+
+.sign {
+	height: 21px;
+	width: 250px;
+	color: white;
+	margin-left: 1152px;
+	margin-top:  -51px;
 }
 
 .subscribe {
@@ -395,7 +523,7 @@ h1 {
     letter-spacing: 0;
     text-align: left;
     color: white;
-    margin-top: 40px;
+    position: relative;
 }
 
 .form-subscription {
@@ -426,8 +554,8 @@ h1 {
     width: 129px;
     border-radius: 4px;
     border: 1px solid #4B9200;
-    margin-top: 14px;
-    margin-left: 10px;
+	margin-left: 10px;
+	margin-top: 13px;
 }
 
 .btn_submit {
@@ -435,84 +563,7 @@ h1 {
     color: #4B9200;
 }
 
-.btn_vol {
-    position: absolute;
-    height: 54px;
-    width: 298px;
-    margin-left: 220px;
-    margin-top: 171px;
+.footer-col {
+	margin-top: -340px;
+	margin-left: 1013px;
 }
-
-.soc_media {
-    display: flex;
-    flex-direction: column;
-    margin-top: 44px;
-}
-
-ul .soc_med {
-    color: white;
-    list-style: none;
-    padding: 0;
-}
-
-.soc_med_item {
-    height: 21px;
-    width: 73px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.footer_nav_menu {
-    text-decoration: none;
-    margin-left: 720px;
-    list-style: none;
-}
-
-.menu_footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 500px;
-}
-
-.menu_footer_item a {
-    display: block;
-    text-decoration: none;
-    margin-left: 38px;
-    color: white;
-    font-size: 16px;
-    font-weight: 22.4;
-}
-
-
-.menu_footer_item_about {
-    color: red;
-    list-style: none;
-}
-
-.menu_footer_item_map {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-}
-
-.sign {
-    text-align: center;
-    height: 21px;
-    width: 240px;
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 21px;
-    color: white;
-}
-
-
-@media screen and (max-width: 1600px) {
-	.main_wrapper {
-		width: 100%;
-}
-}
-
-
