@@ -945,23 +945,65 @@ footer {
 	margin-left: 1013px;
 }
 
-@media only screen and (max-width:1000px) {
+@media (max-width:1000px) {
     .header {
-        width: 1000px;
+        max-width: 970px;
         height: 80px;
         margin: 0 auto;
-        
+        display: flex;
+        width: 200%;
+
     }
 
     .main_wrapper {
-        width: 1000px;
-        min-width: 100%;
+        max-width: 999px;
+        width: 100%;
         box-sizing: border-box;
     }
-    
     body {
         font-family: Roboto, sans-serif;
-        width: 1000px;
+        max-width: 999px;
         min-width: 100%;
+    }
+
+    .backstage {
+        max-width: 970px;
+    }
+
+    .header_wrapper {
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        height: 80px;
+        margin: 0 auto 0;
+        min-width: 100%;
+        max-width: 999px;
+    }
+
+    .fav_animal {
+        max-width: 999px;
+    }
+
+    .pets_block {
+        max-width: 999px;
+    }
+
+    .footer-content {
+        max-width: 999px;
+    }
+
+    .pets_block {
+        max-width: 999px;
+    }
+
+    .pick_a_friend {
+        max-width: 999px;
+    }
+
+    .testimonials {
+        max-width: 999px;
+    }
+    .footer-content {
+        max-width: 999px;
     }
 }

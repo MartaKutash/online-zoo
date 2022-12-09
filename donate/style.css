@@ -36,9 +36,6 @@ div {
 	justify-content: space-between;
 }
 
-.header_wrapper_nav {
-}
-
 .header_logo {
 	padding: 4px;
     text-align: start;
@@ -575,4 +572,36 @@ ul .soc_med {
 	height: fit-content;
 	align-self: end;
 }
+
+@media (max-width: 1000px) {
+	.header {
+		max-width: 999px;
+		margin: 0 auto;
+	}
+
+	.main_wrapper {
+		max-width: 999px;
+	}
+	body {
+		max-width: 999px;
+	}
+
+	.header_wrapper {
+		max-width: 999px;
+	}
+
+	.panda_bg {
+		max-width: 999px;
+	}
+
+	.pick_and_feed {
+		max-width: 999px;
+	}
+
+	.footer {
+		max-width: 999px;
+	}
+}
+
+
 
