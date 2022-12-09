@@ -5,6 +5,7 @@
 .main_wrapper {
     min-width: 100%;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 body {
@@ -52,6 +53,7 @@ div {
 .header_nav {
     display: flex;
     align-items: center;
+    width: 680px;
 }
 
 
@@ -60,7 +62,7 @@ div {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 63px;
+    margin-left: 67px;
     padding: 0;
 
 }
@@ -98,7 +100,7 @@ h1 {
 
 .design {
     display: block;
-    margin-left: 573px;
+    margin-left: 300px;
     float: right;
 }
 
@@ -516,6 +518,17 @@ h2 .backstage {
     margin-top: -100px;
 }
 
+.arrow_prev {
+    position: absolute;
+    top: -200px;
+    left: -60px;
+}
+
+.arrow_next {
+    position: absolute;
+    top: 380px;
+    left: 1350px;
+}
 .btn_choose {
     height: 54px;
     width: 298px;
@@ -930,4 +943,25 @@ footer {
 .footer-col {
 	margin-top: -340px;
 	margin-left: 1013px;
+}
+
+@media only screen and (max-width:1000px) {
+    .header {
+        width: 1000px;
+        height: 80px;
+        margin: 0 auto;
+        
+    }
+
+    .main_wrapper {
+        width: 1000px;
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Roboto, sans-serif;
+        width: 1000px;
+        min-width: 100%;
+    }
 }
