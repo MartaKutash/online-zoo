@@ -1,0 +1,197 @@
+@media (max-width: 1000px) {
+	.main_wrapper {
+		width: 100%;
+		overflow-x: hidden;
+
+	}
+
+
+	.header_wrapper {
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto 0;
+		align-items: center;
+		width: 100%;
+		height: 80px;
+		align-content: space-between;
+		justify-content: space-between;
+	}
+
+	.header_list {
+		width: 500px;
+	}
+
+	.header_navbar_item + .header_navbar_item {
+		margin-left: 48px;
+	}
+
+	.header_navbar_item + .header_navbar_item_donate {
+		margin-left: 48px;
+	}
+
+	.header_navbar_item_donate + .header_navbar_item {
+		margin-left: 48px;
+	}
+
+	.header_logo {
+		margin-left: 30px;
+	}
+
+	.header_nav {
+		width: 35%;
+		margin-right: 394px;
+		font-family: Roboto, sans-serif;
+	}
+	.designed_by {
+		margin-right: 30px;
+	}
+
+
+	.panda_bg {
+		width: 100%;
+	}
+
+	.panda {
+		width: 100%;
+	}
+
+	.blank_line  {
+		display: none;
+	}
+
+	.pick_and_feed {
+		width: 100%;
+		height: 1333px;
+	}
+
+	.help h3 {
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 46.8px;
+		margin-left: 30px;
+		width: 778px;
+		height: 94px;
+	}
+
+	.help p {
+		margin-top: 30px;
+		width: 939px;
+		height: 94px;
+		margin-left: 31px;
+	}
+
+	.donation_information h3 {
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 47px;
+		width: 341px;
+		height: 47px;
+
+	}
+
+	.inner {
+		width: 940px;
+		padding: 10px 0px 46px 0px;
+		margin-left: 30px;
+		margin-right: 30px;
+		height: 862px;
+	}
+
+	.pick_friend p {
+		height: 29px;
+		width: 849px;
+		margin-left: 47px;
+		margin-top: 10px;
+	}
+
+	.pick_friend h2 {
+		height: 58px;
+		width: 463px;
+		margin-left: 231px;
+		margin-top: 10px;
+
+	}
+	.amount_of_days {
+		height: 58px;
+		width: 41px;
+		margin-left: 234px;
+		margin-top: 165px;
+	}
+
+	.panda_diet {
+		height: 22px;
+		width: 159px;
+		margin-left: 126px;
+		margin-top: -101px;
+		margin-right: 89px;
+	}
+	.x_icon {
+		height: 14px;
+		width: 14px;
+		margin-left: 50px;
+		margin-top: 190px;
+	}
+
+	.animal_widget {
+		height: 246px;
+		width: 284px;
+		margin-left: 64px;
+		margin-top: 60px;
+	}
+
+	.scroll p {
+		height: 22px;
+		width: 57px;
+		margin-left: 65px;
+		margin-top: 48px;
+
+	}
+	.prog_bar {
+		height: 40px;
+		width: 810px;
+		margin-left: 65px;
+		margin-top: 10px;
+	}
+
+	.price {
+		height: 36px;
+		width: 830px;
+		margin-left: 65px;
+		margin-top: 6px;
+	}
+
+	.form_input {
+		height: 54px;
+		width: 268px;
+		margin-left: 366px;
+		margin-top: 6px;
+
+	}
+
+	.monthly {
+		margin-right: 150px;
+	}
+
+	.type_radio {
+		margin-left: 366px;
+		width: 228px;
+		margin-top:10px;
+	}
+
+
+	.feed_a_friend {
+		height: 56px;
+		width: 298px;
+		margin-left: 353px;
+		margin-top: 10px;
+	}
+
+	.feed_a_friend p  {
+		height: 22px;
+		width: 301px;
+		margin-right: 321px;
+		margin-top: 10px;
+	}
+
+
+}

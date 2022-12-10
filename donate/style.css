@@ -12,7 +12,7 @@ section {
 
 div {
 	display: block;
-}
+}*/
 
 .main_wrapper {
 	min-width: 100%;
@@ -36,11 +36,13 @@ div {
 	justify-content: space-between;
 }
 
+
 .header_logo {
 	padding: 4px;
     text-align: start;
 	width: fit-content;
 }
+
 
 h1 {
     position: absolute;
@@ -59,6 +61,7 @@ h1 {
 
 .header_nav {
 	width: 50%;
+
 }
 
 
@@ -146,7 +149,6 @@ h1 {
 	width: 1160px;
 	min-height: 1482px;
 	border-radius: 0;
-	/*margin-left: 44px;*/
 }
 
 .help {
@@ -360,7 +362,7 @@ input[type=number] {
 	text-align: left;
 }
 
-.footer {
+/*.footer {
     display: flex;
     flex-direction: column;
     height: 443px;
@@ -573,35 +575,7 @@ ul .soc_med {
 	align-self: end;
 }
 
-@media (max-width: 1000px) {
-	.header {
-		max-width: 999px;
-		margin: 0 auto;
-	}
 
-	.main_wrapper {
-		max-width: 999px;
-	}
-	body {
-		max-width: 999px;
-	}
-
-	.header_wrapper {
-		max-width: 999px;
-	}
-
-	.panda_bg {
-		max-width: 999px;
-	}
-
-	.pick_and_feed {
-		max-width: 999px;
-	}
-
-	.footer {
-		max-width: 999px;
-	}
-}
 
 
 
