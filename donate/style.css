@@ -12,7 +12,7 @@ section {
 
 div {
 	display: block;
-}*/
+}
 
 .main_wrapper {
 	min-width: 100%;
@@ -362,7 +362,7 @@ input[type=number] {
 	text-align: left;
 }
 
-/*.footer {
+.footer {
     display: flex;
     flex-direction: column;
     height: 443px;
