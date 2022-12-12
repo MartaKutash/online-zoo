@@ -52,6 +52,7 @@
 
 	.panda_bg {
 		width: 100%;
+		background: url(assets/images/panda_bg.png);
 	}
 
 	.panda {
@@ -324,7 +325,7 @@
 	}
 
 	.panda {
-		background: url(../assets/images/panda_bg_for_donate.png);
+		background: url(assets/images/panda_bg_for_donate.png);
 		height: 335px;
 	}
 
