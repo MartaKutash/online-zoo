@@ -118,7 +118,7 @@ h1 {
 }
 
 .panda {
-	background: url(../assets/images/panda_bg.png) no-repeat;
+	background: url(../assets/images/Giant\ Panda.png) no-repeat 50% 50%;
 	height: 390px;
 	background-size: cover;
     position: relative;
@@ -149,6 +149,7 @@ h1 {
 	width: 1160px;
 	min-height: 1482px;
 	border-radius: 0;
+	position: re;
 }
 
 .help {
@@ -177,7 +178,7 @@ h1 {
 	letter-spacing: 0em;
 	text-align: left;
 	color: white;
-	padding-top: 10px;
+	padding-top: 50px;
 }
 
 .donation_information h3 {
@@ -395,7 +396,9 @@ input[type=number] {
 }
 
 .btn_donate {
-    margin-top: 68px;
+    padding-top: 34px;
+	height: 54px;
+	width: 298px;
 }
 
 .subscribe {
