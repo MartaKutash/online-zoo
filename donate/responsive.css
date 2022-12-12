@@ -1,8 +1,12 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 @media (max-width: 1000px) {
 	.main_wrapper {
 		width: 100%;
 		overflow-x: hidden;
-
 	}
 
 
@@ -45,7 +49,6 @@
 	.designed_by {
 		margin-right: 30px;
 	}
-
 
 	.panda_bg {
 		width: 100%;
@@ -251,9 +254,16 @@
 		margin-right: 201px;
 		margin-top: 14px;
 	}
-
-
-
+	.form-subscription {
+		margin-right: 301px;
+		margin-top: 14px;
+	}
+	.send_btn {
+		height: 42px;
+		width: 129px;
+		margin-left: 779px;
+		margin-top: -53px;
+	}
 
 }
 
@@ -263,9 +273,10 @@
 		overflow-x: hidden;
 	}
     body {
-        margin-top: 80px;
+        margin-top: 34px;
     }
-    .design {
+
+    .designed_by {
         display: none;
     }
 
@@ -275,11 +286,24 @@
         width: 100%;
         max-width: 640px;
         top: 0;
-    }
+		max-height: 34px;
+	}
+
+	.header_wrapper {
+		max-height: 34px;
+	}
+
 	.header_logo {
 		height: 29px;
 		width: 47px;
 		margin-bottom: 3px;
+		margin-top: 2px;
+		margin-left: 30px;
+	}
+
+	.header_logo > a > img{
+		height: 25px;
+		width: 43px;
 	}
 
     .header_list {
@@ -287,9 +311,12 @@
     }
 
     .menu-burger {
-        display: block;
+        display: inline-block;
         color: white;
-        font-size: 45px;
+        font-size: 18px;
+		margin-right: 20px;
+		margin-top: 12px;
+		margin-bottom: 12px;
     }
 
 	.panda_bg {
@@ -350,8 +377,6 @@
 		width: 600px;
 		margin-left: 20px;
 		margin-top: 30px;
-		margin-bottom: 77px;
-		margin-bottom: 46px;
 	}
 	.inner_picture {
 		height: 868px;
@@ -380,13 +405,6 @@
 		font-weight: 400;
 		line-height: 29px;
 	}
-	/*.panda_block {
-		height: 246px;
-		width: 532px;
-		margin-left: 27px;
-		margin-top: 50px;
-		border-radius: 0px;
-	}*/
 	.amount_of_days {
 		height: 58px;
 		width: 82px;
@@ -494,9 +512,6 @@
 		margin-top: 32px;
 	}
 
-	.soc_media {
-
-	}
 	ul .soc_med {
 		margin-left: 396px;
 		margin-bottom: 1000px;
@@ -560,24 +575,30 @@
 		width: 100%;
 	}
     body {
-        margin-top: 20px;
+        width: 100%;
     }
-    .design {
+    .designed_by {
         display: none;
     }
 
     .header {
         position: fixed;
-        z-index: 450px;
+        z-index: 999;
         width: 100%;
         max-width: 320px;
         top: 0;
-		position: absolute;
+		height: 34px;
     }
+
+	.header_wrapper {
+		width: 100%;
+		max-width: 320px;
+	}
+
 	.header_logo {
 		height: 14px;
 		width: 23px;
-		margin-bottom: 1.5px;
+		margin-bottom: 2px
 	}
 
     .header_list {
@@ -585,9 +606,12 @@
     }
 
     .menu-burger {
-        display: block;
+        display: inline-block;
+		position: fixed;
+		right: 10px;
         color: white;
-        font-size: 22px;
+        font-size: 18px;
+		margin: 0;
     }
 
 	.header_logo {
@@ -596,23 +620,18 @@
 		margin-left: 10px;
 		margin-top: 2px;
 	}
-	.panda_bg {
-		width: 100%;
-	}
-	.panda {
-		width: 766px;
-	}
+
 	.pick_and_feed {
 		width: 100%;
 		height: 1145px;
-		position: relative;
+		padding: 50px;
 	}
 
 	.help h3 {
 		height: 87px;
 		width: 300px;
 		margin-left: 10px;
-		margin-top: 30px;
+		margin-top: -70px;
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 29px;
@@ -624,10 +643,10 @@
 		height: 308px;
 		width: 300px;
 		margin-left: 10px;
-		margin-top: 20px;
+		margin-top: 40px;
 		font-family: Roboto;
 		font-size: 16px;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 22px;
 		letter-spacing: 0em;
 		text-align: left;
@@ -637,7 +656,8 @@
 		height: 29px;
 		width: 227px;
 		margin-left: 10px;
-		margin-top: 30px;
+		margin-top: -20px;
+		margin-bottom: 20px;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 400;
@@ -649,8 +669,6 @@
 
 	.pick_and_feed_inner_wrapper {
 		width: 100%;
-		height: 1333px;
-		margin-bottom: 40px;
 	}
 
 	.inner {
@@ -696,13 +714,6 @@
 		text-align: center;
 
 	}
-	/*.panda_block {
-		height: 246px;
-		width: 532px;
-		margin-left: 27px;
-		margin-top: 50px;
-		border-radius: 0px;
-	}*/
 	.amount_of_days {
 		height: 32px;
 		width: 46px;
@@ -756,7 +767,7 @@
 		height: 5.6px;
 		width: 301px;
 		left: 10px;
-		margin-top: 44px;
+		margin-top: 80px;
 	}
 	.price {
 		height: 18px;

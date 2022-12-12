@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.style.css">
 </head>
 <body>
 	<div class="main_wrapper">
@@ -17,47 +18,49 @@
 			<div class="header_wrapper">
 				<div class="header_wrapper_nav">
 					<div class="header_logo">
-						<h1 class='visually-hidden'>PetStory Online</h1>
+						<h1 class="visually-hidden">PetStory Online</h1>
 						<a class="link_logo" href="../online-zoo/" aria-label="PetStory online">
-							<span>PetStory online</span>
+							<span class="logo_text">PetStory online</span>
+							<img class="logo_img" src="assets/icons/PetStory%20online_logo.png" alt="PetStory online">
 						</a>
 					</div>
-			<nav class="header_nav">
-				<ul class="header_list">
-					<li class="header_item_about">
-						<a href="../online-zoo/" id="header_link_about">About</a></li>
-					<li class="header_item">
-						<a href="#" class="header_link">Map</a>
-					</li>
-					<li class="header_item">
-						<a href="#" class="header_link">Zoos</a>
-					</li>
-					<li class="header_item">
-						<a href="../online-zoo/donate" id="header_link_donate">Donate</a>
-					</li>
-					<li class="header_item">
-						<a href="#" class="header_link">Contact us</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="design">
-				<a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="credentials__item-link">Designed by ©</a>
-			</div>
+					<nav class="header_nav">
+						<ul class="header_list">
+							<li class="header_item">
+								<a href="../online-zoo/" id="header_link_about">About</a></li>
+							<li class="header_item">
+								<a href="#" class="header_link">Map</a>
+							</li>
+							<li class="header_item">
+								<a href="#" class="header_link">Zoos</a>
+							</li>
+							<li class="header_item">
+								<a href="../online-zoo/donate" id="header_link_donate">Donate</a>
+							</li>
+							<li class="header_item">
+								<a href="#" class="header_link">Contact us</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu-burger">
+						<i class="fa-solid fa-bars white"></i>
+					</div>
+					<div class="design">
+						<a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="credentials__item-link">Designed by ©</a>
+					</div>
 				</div>
-		</div>
-	</header>
+			</div>
+		</header>
 		<section class="fav_animal">
 			<div class="fav_animal_container">
-			<div class="circle">
-				<img src="assets/icons/Ellipse 6.png" alt="There must be ellipse">
-			</div>
-			<div class="text_watch_your">
-				<img src="assets/images/Watch your favorite animal online.png" alt="Watch your favourite animal on-line">
-			</div>
+				<div class="watch_your_circle">
+					<img class="watch_your_text" src="assets/images/Watch your favorite animal online.png" alt="Watch your favourite animal on-line">
+				</div>
 				<div class="btn_watch">
-					<a class="btn_watch" href="#"><img src="assets/icons/watch_online.png" alt="watch_online"></a></div>
+					<a class="btn_watch" href="#"><img src="assets/icons/watch_online.png" alt="watch_online"></a>
+				</div>
 			</div>
-				</section>
+		</section>
 		<section class="backstage">
 				<div class="backstage_wrapper">
 					<div class="bamboo_cap">
@@ -78,14 +81,14 @@
 				<div class="outer_wrapper">
 					<div class="pets_wrapper">
 						<div class="pandas">
-							<a href="#"><div class="panda_img"><img src="assets/images/pandas.png" alt="pandas"></div>
+							<a href="#"><div class="panda_img"><img src="assets/images/pandas.png" alt="pandas"></div></a>
 							<div class="panda_text">Giant Pandas<br>Native to Southwest China<br>
-								<img class="panda_icon" src="assets/icons/banana-bamboo_icon.png" alt="banana-icon"></a>
+								<img class="panda_icon" src="assets/icons/banana-bamboo_icon.png" alt="banana-icon">
 							</div>
 						</div>
 						<div class="eagles">
-							<a href="#"><div class="eagles_img"><img src="assets/images/eagle.png" alt="eagles"></div>
-							<div class="eagles_text">Eagles<br>Native to South America<br><img class="eagle_icon" src="assets/icons/meet-fish_icon.png" alt="meet_and_fish_icon"></div></a>
+							<a href="#"><div class="eagles_img"><img src="assets/images/eagle.png" alt="eagles"></div></a>
+							<div class="eagles_text">Eagles<br>Native to South America<br><img class="eagle_icon" src="assets/icons/meet-fish_icon.png" alt="meet_and_fish_icon"></div>
 						</div>
 						<div class="gorilla">
 							<a href="#"><div class="gorilla_img"><img src="assets/images/gorilla.png" alt="gorillas"></div>
@@ -105,82 +108,109 @@
 						</div>
 					</div>
 					<div class="arrow_prev">
-						<a href="#"><img src="/assets/icons/arrow_prev.png" alt="arrow_previous"></div></a>
+						<a href="#"><img src="/assets/icons/arrow_prev.png" alt="arrow_previous"></a></div>
 					<div class="arrow_next">
-						<a href="#"><img src="/assets/icons/arrow_next.png" alt="arrow_next"></div></a>
-					<div class="btn_choose"><a href="#!"><img src="assets/icons/choose.png"alt="choose_button"></a></div>
+						<a href="#"><img src="/assets/icons/arrow_next.png" alt="arrow_next"></a></div>
+					<div class="btn_choose"><a href="#!"><img src="assets/icons/choose.png" alt="choose_button"></a></div>
 					<div class="palm_foto"><img src="assets/images/palm_foto (1).png" alt="palm_foto"></div>
 					<div class="strelitzia"><img src="assets/images/strelitzia 1 (1).png" alt="strelitzia"></div>
-		</section>
+		</div></section>
 		<section class="pick_a_friend">
-			<div class="pick_inner">
-				<h2 class="pick_h2">Pick and feed a friend</h2>
-				<div class="pick_sub">We know the animals bring you joy, and in these extraordinary times, we’re glad.</div>
-				<div class="pick_text_1">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PatStory.</div>
-				<div class="pick_text_2">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="emergency" href="../donate/#">Emergency Support Fund</a>.</div>
-				<h3 class="how_work">How it works</h3>
-				<div class="pick_icons">
-					<div class="img_pay"><img src="assets/icons/pay_with_card.png" alt="pay_with_card"></div>
-					<div class="arrow1"><img src="assets/icons/Vector.png" alt="arrow1"></div>
-					<div class="img_payment_goes"><img src="assets/icons/payment_goes.png" alt="pay_goes"></div>
-					<div class="arrow2"><img src="assets/icons/Vector.png" alt="arrow1"></div>
-					<div class="gets_delicious_food"><img src="assets/icons/gets_delishious_dish.png" alt="gets_delicious_food"></div>
-					<div class="btn_wrapper">
+		<div class="pick_inner">
+			<h2 class="pick_h2">Pick and feed a friend</h2>
+			<div class="pick_sub">We know the animals bring you joy, and in these extraordinary times, we’re glad.</div>
+			<div class="pick_text_1">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PatStory.</div>
+			<div class="pick_text_2">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="emergency" href="../donate/#">Emergency Support Fund</a>.</div>
+			<h3 class="how_work">How it works</h3>
+			<div class="pick_icons">
+				<div class="img_pay"><img src="assets/icons/pay_with_card.png" alt="pay_with_card"></div>
+				<div class="arrow1"><img src="assets/icons/Vector.png" alt="arrow1"></div>
+				<div class="arrow1-2"><img src="assets/icons/arrow.png" alt="arrow1.2"></div>
+				<div class="img_payment_goes"><img src="assets/icons/payment_goes.png" alt="pay_goes"></div>
+				<div class="arrow2"><img src="assets/icons/Vector.png" alt="arrow1"></div>
+				<div class="arrow2-2"><img src="assets/icons/arrow.png" alt="arrow2.2"></div>
+				<div class="gets_delicious_food"><img src="assets/icons/gets_delishious_dish.png" alt="gets_delicious_food"></div>
+				<div class="btn_wrapper">
 					<a class="button" href="../online-zoo/donate"><img src="assets/icons/btn_feed.png" alt="feed"></a></div>
-				</div>
 			</div>
-		</section>
-		<section class="testimonials">
-			<div class="testimonial_wrapper">
-				<h3 class="testim_header">Testimonials</h3>
-				<div class="test_cards_wrapper">
-					<div class="testim_img_Jon"><img src="assets/icons/testimonials_John.png" alt="testim_img_Jon"></div>
-					<div class="testim_img_Oscar"><img src="assets/icons/testimonials_Oscar.png" alt="testim_img_Oscar"></div>
-					<div class="testim_img_Fredericka"><img src="assets/icons/testimonials_Fredericka.png" alt="testim_img_Fredericka"></div>
-					<div class="testim_img_Mila"><img src="assets/icons/testimonials_Mila.png" alt="testim_img_Mila"></div>
-					<div class="slider"><input type="range" value="1" min="1" max="10" class='slider'></div>
-				</div>
-				<a class="button" href="#"><img src="assets/icons/leave_feedback_btn.png" alt="feedback"></a></div>
-				<div class="leave"><img src="assets/images/leav_foto.png" alt="leave"></div>
-		</section>
-		<footer>
-			<div class="footer-content">
-				<div class="footer_logo">
-					<a href="../index.html"><img src="assets/icons/logo_footer.png" alt="footer_logo"></a>
-				</div>
-				<div class="btn_donate"><a href="../online-zoo/donate"><img src="assets/icons/donate_for_vol.png" alt="donate_for_vol"></a></div>
-				<div class="list_soc_media">
-				<ul class="soc_media">
-					<li class="soc_media_item"><a class="icon" href="https://www.facebook.com/index.php"><img src="assets/icons/facebook.png" alt="fb_icon"></a></li>
-					<li class="soc_media_item"><a class="icon" href="https://twitter.com/explore"><img src="assets/icons/twitter.png" alt="twitter"></a></li>
-					<li class="soc_media_item"><a class="icon" href="https://www.instagram.com/"><img src="assets/icons/instagram.png" alt="instagram"></a></li>
-					<li class="soc_media_item"><a class="icon" href="https://www.youtube.com/"><img src="assets/icons/youtube.png" alt="youtube"></a></li>
-				</ul></div>
-				<div class="footer_nav_menu">
-					<ul class="menu_footer">
-						<li class="menu_footer_item"><a href="../online-zoo/">About</a></li>
-						<li class="menu_footer_item">
-							<a href="#!" class="footer_nav">Map</a>
-						</li>
-						<li class="menu_footer_item">
-							<a href="#!" class="footer_nav">Zoos</a>
-						</li>
-						<li class="menu_footer_item">
-							<a href="#!" class="footer_nav">Contact us</a>
-						</li>
-					</ul>
-				</div>
-			<div class="sign">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
-			<div class="footer-col">
-				<label id="subscribe" class="subscribe" for="email">Subscribe to our news</label>
-				<form class="form-subscription">
-					<input aria-labelledby="subscribe" id="email" type="email" placeholder="Enter your email"
-						   class="form-subscription-input" autocomplete="off" required>
-					<button class="send_btn"><a class="btn_submit" href="#">Submit</a></button>
-				</form>
+		</div>
+	</section>
+	<section class="testimonials">
+		<div class="testimonial_wrapper">
+			<h3 class="testim_header">Testimonials</h3>
+			<div class="test_cards_wrapper">
+				<div class="testim_img_Jon"><img src="assets/icons/testimonials_John.png" alt="testim_img_Jon"></div>
+				<div class="testim_img_Oscar"><img src="assets/icons/testimonials_Oscar.png" alt="testim_img_Oscar"></div>
+				<div class="testim_img_Fredericka"><img src="assets/icons/testimonials_Fredericka.png" alt="testim_img_Fredericka"></div>
+
+				<div class="testim_img_Jon_horizontal"><img src="assets/icons/testimonials_John_horizontal.png" alt="testim_img_Jon"></div>
+				<div class="testim_img_Oscar_horizontal"><img src="assets/icons/testimonials_Oscar_horizontal.png" alt="testim_img_Oscar"></div>
+				<div class="testim_img_Fredericka_horizontal"><img src="assets/icons/testimonials_Fredericka_horizontal.png" alt="testim_img_Fredericka"></div>
+
+				<div class="testim_img_Jon_horizontal_small"><img src="assets/icons/testimonials_John_horizontal_small.png" alt="testim_img_Jon"></div>
+				<div class="testim_img_Oscar_horizontal_small"><img src="assets/icons/testimonials_Oscar_horizontal_small.png" alt="testim_img_Oscar"></div>
+				<div class="testim_img_Fredericka_horizontal_small"><img src="assets/icons/testimonials_Fredericka_horizontal_small.png" alt="testim_img_Fredericka"></div>
+
+				<div class="testim_img_Mila"><img src="assets/icons/testimonials_Mila.png" alt="testim_img_Mila"></div>
+				<div class="slider"><input type="range" value="1" min="1" max="10" class="slider"></div>
 			</div>
-			</div>
-		</footer>
+			<a class="button" id="feedback_btn" href="#"><img src="assets/icons/leave_feedback_btn.png" alt="feedback"></a>
+		</div>
+		<div class="leave"><img src="assets/images/leav_foto.png" alt="leave"></div>
+		<div class="leave_small"><img src="assets/images/leav_foto_small.png" alt="leave"></div>
+		<div class="leave_super_small"><img src="assets/images/leav_foto_super_small.png" alt="leave"></div>
+	</section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer_logo">
+                    <a href="../index.html"><img src="assets/icons/logo_footer.png" alt="footer_logo"></a>
+                </div>
+                <div class="footer_logo_mobile">
+                    <a href="../index.html"><img src="assets/icons/footer_logo_mobile.png" alt="footer_logo"></a>
+                </div>
+                <div class="btn_donate"><a href="../online-zoo/donate"><img src="assets/icons/donate_for_vol.png" alt="donate_for_vol"></a></div>
+                <div class="list_soc_media">
+                    <ul class="soc_media">
+                        <li class="soc_media_item"><a class="icon" href="https://www.facebook.com/index.php"><img src="assets/icons/facebook.png" alt="fb_icon"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://twitter.com/explore"><img src="assets/icons/twitter.png" alt="twitter"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://www.instagram.com/"><img src="assets/icons/instagram.png" alt="instagram"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://www.youtube.com/"><img src="assets/icons/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="list_soc_media_mobile">
+                    <ul class="soc_media">
+                        <li class="soc_media_item"><a class="icon" href="https://www.facebook.com/index.php"><img src="assets/icons/fb_icon.png" alt="fb_icon"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://twitter.com/explore"><img src="assets/icons/twitter_icon.png" alt="twitter"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://www.instagram.com/"><img src="assets/icons/ig_icon.png" alt="instagram"></a></li>
+                        <li class="soc_media_item"><a class="icon" href="https://www.youtube.com/"><img src="assets/icons/yt_icon.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_menu">
+                    <ul class="menu_footer">
+                        <li class="menu_footer_item"><a href="../online-zoo/">About</a></li>
+                        <li class="menu_footer_item">
+                            <a href="#!" class="footer_nav">Map</a>
+                        </li>
+                        <li class="menu_footer_item">
+                            <a href="#!" class="footer_nav">Zoos</a>
+                        </li>
+                        <li class="menu_footer_item">
+                            <a href="#!" class="footer_nav">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sign">Designed by Alisa Samborskaya<br>©RSSchool &amp; ©Yem Digital 2021</div>
+                <div class="footer-col">
+                    <label id="subscribe" class="subscribe" for="email">Subscribe to our news</label>
+                    <form class="form-subscription">
+                        <input aria-labelledby="subscribe" id="email" type="email" placeholder="Enter your email" class="form-subscription-input" autocomplete="off" required="">
+                        <button class="send_btn"><a class="btn_submit" href="#">Submit</a></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
 	</div>
+
+</body>
 		</body>
 		</html>

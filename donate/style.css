@@ -118,7 +118,7 @@ h1 {
 }
 
 .panda {
-	background: url(../assets/images/panda_bg.png) no-repeat;
+	background: url(assets/images/panda_bg.png) no-repeat;
 	height: 390px;
 	background-size: cover;
     position: relative;
