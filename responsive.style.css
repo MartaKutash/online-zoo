@@ -518,9 +518,64 @@
         max-width: 640px;
         top: 0;
     }
+    .header_nav {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     .header_list {
-        display: none;
+        position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    padding: 5px 50px 350px 100px;
+        background: rgb(49, 48, 48);
+	    transform: translateX(-100%);
+	    transition: transform 0.5s;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .header_list.active {
+        transform: translateX(0);
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
     }
 
     .btn_watch {
@@ -541,12 +596,6 @@
     .footer-content {
         width: 100%;
         max-width: 640px;
-    }
-
-    .menu-burger {
-        display: block;
-        color: white;
-        font-size: 45px;
     }
 
     /*backstage 640*/
@@ -902,6 +951,31 @@
         top: 137px;
 
     }
+    #show-modal-btn2 {
+        border: none;
+        border-color: transparent;
+    }
+    #overlay2 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(231, 229, 229);
+    }
+    #modal2 {
+        max-width: 300px;
+        height: 100px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
     .testim_img_Oscar_horizontal {
         top: 261px;
@@ -1054,8 +1128,64 @@
         margin: 0;
     }
 
-    .menu-burger {
-        font-size: 18px;
+    .header_nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_list {
+        position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    padding: 5px 50px 350px 100px;
+        background: rgb(49, 48, 48);
+	    transform: translateX(-100%);
+	    transition: transform 0.5s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .header_list.active {
+        transform: translateX(0);
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
     }
 
     /*header 320*/
@@ -1384,6 +1514,31 @@
 
     .testim_img_Jon_horizontal_small {
         top: 79px;
+    }
+    #show-modal-btn1 {
+        border: none;
+        border-color: transparent;
+    }
+    #overlay1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(231, 229, 229);
+    }
+    #modal1 {
+        max-width: 300px;
+        height: 100px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     .testim_img_Oscar_horizontal_small {

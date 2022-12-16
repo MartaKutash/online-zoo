@@ -43,8 +43,10 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="menu-burger">
-						<i class="fa-solid fa-bars white"></i>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 					<div class="design">
 						<a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
@@ -142,21 +144,39 @@
 		<div class="testimonial_wrapper">
 			<h3 class="testim_header">Testimonials</h3>
 			<div class="test_cards_wrapper">
-				<div class="testim_img_Jon"><img src="assets/icons/testimonials_John.png" alt="testim_img_Jon"></div>
+				<button id="show-modal-btn" class="testim_img_Jon"><img src="assets/icons/testimonials_John.png" alt="testim_img_Jon"></button>
+				<div id="overlay">
+					<div id="modal">
+						<P>fldfhdf</P>
+						<button id="close-modal-btn">X</button>
+					</div>
+				</div>
 				<div class="testim_img_Oscar"><img src="assets/icons/testimonials_Oscar.png" alt="testim_img_Oscar"></div>
 				<div class="testim_img_Fredericka"><img src="assets/icons/testimonials_Fredericka.png" alt="testim_img_Fredericka"></div>
 
-				<div class="testim_img_Jon_horizontal"><img src="assets/icons/testimonials_John_horizontal.png" alt="testim_img_Jon"></div>
+				<button id="show-modal-btn2" class="testim_img_Jon_horizontal"><img src="assets/icons/testimonials_John_horizontal.png" alt="testim_img_Jon"></button>
+				<div id="overlay2">
+					<div id="modal2">
+						<P>fldfhdf</P>
+						<button id="close-modal-btn2">X</button>
+					</div>
+				</div>
 				<div class="testim_img_Oscar_horizontal"><img src="assets/icons/testimonials_Oscar_horizontal.png" alt="testim_img_Oscar"></div>
 				<div class="testim_img_Fredericka_horizontal"><img src="assets/icons/testimonials_Fredericka_horizontal.png" alt="testim_img_Fredericka"></div>
 
-				<div class="testim_img_Jon_horizontal_small"><img src="assets/icons/testimonials_John_horizontal_small.png" alt="testim_img_Jon"></div>
+				<button id="show-modal-btn1" class="testim_img_Jon_horizontal_small"><img src="assets/icons/testimonials_John_horizontal_small.png" alt="testim_img_Jon"></button>
+				<div id="overlay1">
+					<div id="modal1">
+						<P>fldfhdf</P>
+						<button id="close-modal-btn1">X</button>
+					</div>
+				</div>
 				<div class="testim_img_Oscar_horizontal_small"><img src="assets/icons/testimonials_Oscar_horizontal_small.png" alt="testim_img_Oscar"></div>
 				<div class="testim_img_Fredericka_horizontal_small"><img src="assets/icons/testimonials_Fredericka_horizontal_small.png" alt="testim_img_Fredericka"></div>
-
 				<div class="testim_img_Mila"><img src="assets/icons/testimonials_Mila.png" alt="testim_img_Mila"></div>
 				<div class="slider"><input type="range" value="1" min="1" max="10" class='slider'></div>
 			</div>
+
 			<a class="button"  id="feedback_btn" href="#"><img src="assets/icons/leave_feedback_btn.png" alt="feedback"></a>
 		</div>
 		<div class="leave"><img src="assets/images/leav_foto.png" alt="leave"></div>
@@ -223,5 +243,6 @@
             </div>
         </footer>
 	</div>
+	<script src="PetStory.js"></script>
 		</body>
 		</html>

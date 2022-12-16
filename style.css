@@ -782,7 +782,37 @@ section.pick_a_friend {
     height: 391px;
     width: 268px;
     border-radius: 20px;
-
+}
+#show-modal-btn {
+    border: none;
+    border-color: transparent;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgb(231, 229, 229);
+}
+#modal {
+    max-width: 300px;
+    height: 100px;
+    margin: auto;
+    background-color: #F1F3F2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#overlay1 {
+    display: none;
+}
+#modal1 {
+    display: none;
 }
 
 .testim_img_Fredericka {
@@ -855,7 +885,7 @@ footer {
     height: 52px;
     width: 82px;
     margin-left: 220px;
-    margin-top: 41px;
+    padding-top: 41px;
 }
 
 .btn_donate {
