@@ -3,6 +3,7 @@
 @media (max-width: 1000px) {
 	.main_wrapper {
 		width: 100%;
+		overflow-x: hidden;
 	}
 
 
@@ -196,6 +197,7 @@
 	.footer {
 		width: 100%;
 		height: 443px;
+		margin-top: -10px;
 	}
 	.footer_content_1 {
 		height: 353px;
@@ -252,14 +254,14 @@
 		margin-top: 14px;
 	}
 	.form-subscription {
-		margin-right: 301px;
-		margin-top: 14px;
+		margin-left: 83px;
+		margin-top: 53px;
 	}
 	.send_btn {
 		height: 42px;
 		width: 129px;
-		margin-left: 779px;
-		margin-top: -53px;
+		margin-left: 63px;
+		margin-top: -33px;
 	}
 
 }
@@ -276,6 +278,14 @@
     .designed_by {
         display: none;
     }
+	.logo {
+		height: 29px;
+		width: 46px;
+		padding-left: 20px;
+		padding-top: -200px;
+
+
+	}
 
     .header {
         position: fixed;
@@ -283,30 +293,9 @@
         width: 100%;
         max-width: 640px;
         top: 0;
-		max-height: 34px;
-	}
-
-	.header_wrapper {
-		max-height: 34px;
-	}
-
-	.header_logo {
-		height: 29px;
-		width: 47px;
-		margin-bottom: 3px;
-		margin-top: 2px;
-		margin-left: 30px;
-	}
-
-	.header_logo > a > img{
-		height: 25px;
-		width: 43px;
-	}
-
-    .header_list {
-        display: none;
+		height: 34px;
     }
-	.header_nav {
+    .header_nav {
         display: flex;
         justify-content: flex-end;
     }
@@ -317,14 +306,15 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    padding: 5px 50px 350px 100px;
-        background: rgb(49, 48, 48);
+	    padding: 5px 10px 10px 10px;
+        background: rgb(10, 10, 10);
 	    transform: translateX(-100%);
 	    transition: transform 0.5s;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        float: right;
     }
     .header_list.active {
         transform: translateX(0);
@@ -336,7 +326,6 @@
         position: relative;
         z-index:2;
         overflow: hidden;
-		margin-right: 20px;
     }
     .menu-btn span {
         width: 30px;
@@ -631,55 +620,115 @@
 
     .header {
         position: fixed;
-        z-index: 999;
+        z-index: 450;
         width: 100%;
         max-width: 320px;
         top: 0;
-		height: 34px;
     }
 
-	.header_wrapper {
-		width: 100%;
-		max-width: 320px;
-	}
+    .header_wrapper {
+        height: 34px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
 
-	.header_logo {
-		height: 14px;
-		width: 23px;
-		margin-bottom: 2px
-	}
+    .header_wrapper_nav {
+        padding: 2px 10px 3px;
+    }
 
-    .header_list {
+    .logo_text {
         display: none;
     }
 
-    .menu-burger {
-        display: inline-block;
-		position: fixed;
-		right: 10px;
-        color: white;
-        font-size: 18px;
-		margin: 0;
+    .logo_img {
+        display: block;
+        margin: auto;
+        width: 43px;
+        height: 25px;
     }
 
-	.header_logo {
-		height: 29px;
-		width: 46px;
-		margin-left: 10px;
-		margin-top: 2px;
+    .header_logo {
+        width: 47px;
+        min-width: 47px;
+        height: 29px;
+        margin: 0;
+    }
+
+    .header_nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_list {
+        position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    padding: 15px 100px 100px 100px;
+        background: rgb(49, 48, 48);
+	    transform: translateX(-100%);
+	    transition: transform 0.5s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header_list.active {
+        transform: translateX(0);
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
+    }
+	.panda_bg {
+		width: 100%;
+		height: 187px;
 	}
 
 	.pick_and_feed {
 		width: 100%;
 		height: 1145px;
-		padding: 50px;
+		top: 221px
 	}
 
 	.help h3 {
 		height: 87px;
 		width: 300px;
-		margin-left: 10px;
-		margin-top: -70px;
+		padding-left: 10px;
+		margin-top: -80px;
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 29px;
@@ -690,8 +739,8 @@
 	.help p {
 		height: 308px;
 		width: 300px;
-		margin-left: 10px;
-		margin-top: 40px;
+		padding-left: 10px;
+		padding-top: 20px;
 		font-family: Roboto;
 		font-size: 16px;
 		font-weight: 500;
@@ -703,9 +752,9 @@
 	.donation_information h3  {
 		height: 29px;
 		width: 227px;
-		margin-left: 10px;
-		margin-top: -20px;
-		margin-bottom: 20px;
+		padding-left: 10px;
+		margin-top: -30px;
+		margin-bottom: 30px;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 400;
@@ -717,27 +766,30 @@
 
 	.pick_and_feed_inner_wrapper {
 		width: 100%;
+		height: 591px;
 	}
 
 	.inner {
+		position: absolute;
 		height: 591px;
 		width: 300px;
-		margin-left: 10px;
-		margin-top: 30px;
+		left: 10px;
 		border-radius: 20px;
 	}
 	.inner_picture {
+		position: absolute;
 		height: 551px;
 		width: 301px;
-		margin-left: 10px;
-		margin-top: 20px;
+		left: 10px;
+		top: 20px;
 	}
 
 	.pick_friend h2 {
+		position: absolute;
 		height: 29px;
 		width: 232px;
-		margin-left: 34px;
-		margin-top: 34px;
+		left: 34px;
+		top: 34px;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 400;
@@ -747,9 +799,10 @@
 
 	}
 	.pick_friend p {
+		position: absolute;
 		height: 44px;
 		width: 300px;
-		margin-top: 10px;
+		top: 10px;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 400;

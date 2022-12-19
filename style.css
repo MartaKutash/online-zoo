@@ -253,14 +253,20 @@ h2.backstage {
 
 .pets_wrapper {
     top: 220px;
-    width: 1160px;
+    width: 1370px;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 10px;
+    padding-left: 180px;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.pets_block2 {
+    display: none;
 }
 
 .pandas {
@@ -531,17 +537,30 @@ h2.backstage {
     margin-left: 321px;
     margin-top: -100px;
 }
+.giraffe_img {
+    height: 366px;
+    width: 366px;
+    transition: 0.5s;
+}
+.squirell_img {
+    height: 366px;
+    width: 366px;
+    transition: 0.5s;
+}
+
 
 .arrow_prev {
     position: absolute;
     top: -200px;
     left: -60px;
+    transform: translate(50%, -50%);
 }
 
 .arrow_next {
     position: absolute;
     top: 380px;
-    left: 1350px;
+    left: 1380px;
+    transform: translate(-50%, -50%);
 }
 
 .btn_choose {
@@ -738,7 +757,7 @@ section.pick_a_friend {
     min-width: 100%;
     margin: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 180px;
     position: relative;
 }
 
@@ -765,11 +784,116 @@ section.pick_a_friend {
 }
 
 .test_cards_wrapper {
-    display: flex;
+    padding-top: 47px;
+    /*display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
+.carousel {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 1190px;
+    height: 393px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    gap: 30px;
+}
+
+.photo {
+    position: relative;
+    left: 16px;
+    top: 15px;
+    width: 37px;
+    height: 37px;
+}
+
+.location {
+    position: relative;
+    width: 87px;
+    height: 18px;
+    left: 63px;
+    top: -25px;
+    color: #BDBDBD;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.dot {
+    width: 5px;
+    height: 18px;
+    left: 156px;
+    top: -42px;
+    position: relative;
+    color: #BDBDBD;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.date {
+    width: 41px;
+    height: 18px;
+    left: 168px;
+    top: -60px;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.review {
+    top: -50px;
+    left: 15px;
+    right: 16px;
+    bottom: 19px;
+    position: relative;
+    width: 237px;
+    height: 309px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
+    border-radius: 20px;
+}
+
+.name {
+    position: relative;
+    color: #000000;
+    width: 153px;
+    height: 19px;
+    left: 63px;
+    top: -25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.item {
+    width: 268px;
+    height: 391px;
+    background: #F1F3F2;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    border-color: pink
+}
+.item .testim_img_Oscar
 
 .testim_img_Oscar {
     height: 391px;
@@ -777,43 +901,21 @@ section.pick_a_friend {
     border-radius: 20px;
 }
 
-
 .testim_img_Jon {
     height: 391px;
     width: 268px;
     border-radius: 20px;
 }
-#show-modal-btn {
-    border: none;
-    border-color: transparent;
-}
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgb(231, 229, 229);
-}
-#modal {
-    max-width: 300px;
-    height: 100px;
-    margin: auto;
-    background-color: #F1F3F2;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-#overlay1 {
+#overlay1,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5,
+#overlay6 {
     display: none;
 }
-#modal1 {
-    display: none;
-}
+
+
 
 .testim_img_Fredericka {
     height: 391px;
@@ -840,9 +942,10 @@ section.pick_a_friend {
 }
 
 .slider {
-    margin: 20px auto 32px;
+    margin: 20px auto 50px;
     height: 8px;
     width: 600px;
+    cursor: pointer;
 }
 
 .testimonial_wrapper a {

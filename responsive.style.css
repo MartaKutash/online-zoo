@@ -125,10 +125,13 @@
     }
 
     .pets_wrapper {
-        margin: 0;
-        row-gap: 92px;
-        column-gap: 29px;
-        width: 100%;
+        width: 1158px;
+        height: 872px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-left: 0px;
+        row-gap: 10px;
+        top: 180px
     }
 
     .panda_text,
@@ -188,8 +191,8 @@
         width: 62px;
         height: 62px;
         /*left: calc(50% - (62px/2) - 278.5px);*/
-        left: calc(50% - 62px/2 - 112px);
-        top: 369px;
+        left: calc(50% - 52px/2 - 112px);
+        top: 399px;
     }
 
     .arrow_next {
@@ -197,7 +200,7 @@
         width: 62px;
         height: 62px;
         left: calc(50% - 62px/2 + 112px);
-        top: 369px;
+        top: 399px;
     }
     /*pets_block 1000*/
 
@@ -336,7 +339,7 @@
     /*testimonials 1000*/
     section.testimonials {
         width: 100%;
-        padding: 100px 20px 274px 20px;
+        padding: 140px 20px 274px 20px;
         margin: 0;
         height: 842px;
     }
@@ -346,16 +349,23 @@
         margin: 0;
         height: 100%;
     }
+    .item {
+        width: 293px;
+        height: 391px;
+    }
+    .carousel {
+        width: 939px;
+    }
 
     .testim_header {
         position: absolute;
         width: 206px;
         height: 47px;
         left: calc(50% - 206px/2);
-        top: 100px;
+        top: 85px;
     }
 
-    .testim_img_Jon {
+    /*.testim_img_Jon {
         position: absolute;
         width: 293px;
         height: 391px;
@@ -403,7 +413,7 @@
         display: none;
     }
 
-    /*.slider {
+    .slider {
         position: absolute;
         width: 390px;
         height: 8px;
@@ -529,14 +539,15 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    padding: 5px 50px 350px 100px;
-        background: rgb(49, 48, 48);
+	    padding: 5px 10px 10px 10px;
+        background: rgb(10, 10, 10);
 	    transform: translateX(-100%);
 	    transition: transform 0.5s;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        float: right;
     }
     .header_list.active {
         transform: translateX(0);
@@ -667,7 +678,14 @@
 
     /*pets_block 640*/
     .pets_block {
-        padding: 0 20px 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: -10px;
+        column-gap: 30px;
+        row-gap: 10px;
+        padding-left: 80px;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .palm_foto {
@@ -947,13 +965,16 @@
         position: absolute;
     }
 
+
     .testim_img_Jon_horizontal {
         top: 137px;
+        left: 15px;
 
     }
     #show-modal-btn2 {
         border: none;
         border-color: transparent;
+        border-radius: 20px;
     }
     #overlay2 {
         display: none;
@@ -963,11 +984,11 @@
         left: 0;
         right: 0;
         z-index: 1;
-        background-color: rgb(231, 229, 229);
+        background-color: rgb(131, 128, 128);
     }
     #modal2 {
-        max-width: 300px;
-        height: 100px;
+        max-width: 267px;
+        height: 391px;
         margin: auto;
         background-color: #F1F3F2;
         position: absolute;
@@ -975,6 +996,135 @@
         bottom: 0;
         left: 0;
         right: 0;
+        border-radius: 20px;
+        border: 1px solid pink;
+    }
+    #close-modal-btn2 {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -350px;
+    }
+    .john_icon {
+        margin-left: 12px;
+        margin-top: 15px;
+    }
+    .title_John {
+        margin-top: -60px;
+        margin-left: 62px;
+    }
+    .title_john_country {
+        margin-top: -15px;
+        margin-left: 55px;
+        color: #BDBDBD;
+    }
+
+    #show-modal-btn3 {
+        border: none;
+        border-color: transparent;
+        border-radius: 20px;
+    }
+    #overlay3 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(131, 128, 128);
+    }
+    #modal3 {
+        max-width: 267px;
+        height: 391px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 20px;
+        border: 1px solid pink;
+    }
+    #close-modal-btn3 {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -90px;
+    }
+    .oscar_icon {
+        margin-left: 12px;
+        margin-top: 15px;
+    }
+    .title_oscar {
+        margin-top: -60px;
+        margin-left: 62px;
+    }
+    .title_oscar_country {
+        margin-top: -15px;
+        margin-left: 55px;
+        color: #BDBDBD;
+    }
+    .title_oscar_text {
+        height: 38px;
+        width: 553px;
+        margin-top: 5px;
+        margin-left: 12px;
+        border-radius: 0px;
+
+    }
+    #show-modal-btn4 {
+        border: none;
+        border-color: transparent;
+        border-radius: 20px;
+    }
+    #overlay4 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(131, 128, 128);
+    }
+    #modal4 {
+        max-width: 267px;
+        height: 391px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 20px;
+        border: 1px solid pink;
+    }
+    #close-modal-btn4 {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -90px;
+    }
+    .fredericka_icon {
+        margin-left: 12px;
+        margin-top: 15px;
+    }
+    .title_fredericka {
+        margin-top: -60px;
+        margin-left: 62px;
+    }
+    .title_fredericka_country {
+        margin-top: -15px;
+        margin-left: 55px;
+        color: #BDBDBD;
+    }
+    .title_fredericka_text {
+        height: 38px;
+        width: 553px;
+        margin-top: 5px;
+        margin-left: 12px;
+        border-radius: 0px;
+
     }
 
     .testim_img_Oscar_horizontal {
@@ -1139,14 +1289,14 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    padding: 5px 50px 350px 100px;
+	    padding: 15px 100px 100px 100px;
         background: rgb(49, 48, 48);
 	    transform: translateX(-100%);
 	    transition: transform 0.5s;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .header_list.active {
         transform: translateX(0);
@@ -1312,10 +1462,12 @@
     }
 
     .pets_wrapper {
-        margin: 0;
-        row-gap: 20px;
-        column-gap: 0;
+        margin-left: -50;
+        row-gap: 10px;
+        column-gap: 10;
         width: 100%;
+        display: grid;
+
     }
 
     .btn_choose {
@@ -1333,6 +1485,16 @@
         position: relative;
         width: 285px;
         height: 60px;
+    }
+    .lion,
+    .alligator {
+        display: none;
+    }
+    #cheetah,
+    #panda,
+    #eagle,
+    #sloth {
+        display: none;
     }
 
     .panda_icon,
@@ -1518,6 +1680,8 @@
     #show-modal-btn1 {
         border: none;
         border-color: transparent;
+        border-radius: 20px;
+        box-shadow: none;
     }
     #overlay1 {
         display: none;
@@ -1528,6 +1692,7 @@
         right: 0;
         z-index: 1;
         background-color: rgb(231, 229, 229);
+        border-color: crimson;
     }
     #modal1 {
         max-width: 300px;
@@ -1539,6 +1704,164 @@
         bottom: 0;
         left: 0;
         right: 0;
+        border: 1px solid pink;
+        border-radius: 20px;
+    }
+    #close-modal-btn1 {
+        position: absolute;
+        margin-left: 265px;
+        margin-top: -85px;
+    }
+    .john_icon_small {
+        margin-left: 5px;
+        margin-top: 9px;
+        width: 37px;
+        height: 37px;
+    }
+    .title_Joh_small {
+        margin-top: -70px;
+        margin-left: 52px;
+        width: 86px;
+        height: 29px;
+    }
+    .title_john_country_small {
+        margin-top: -35px;
+        margin-left: 55px;
+        color: #BDBDBD;
+        width: 106px;
+        height: 18px;
+    }
+    .title_john_text_small {
+        height: 38px;
+        width: 252px;
+        margin-top: 15px;
+        margin-left: 12px;
+        border-radius: 0px;
+
+    }
+    #show-modal-btn5 {
+        border: none;
+        border-color: transparent;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+    #overlay5 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(231, 229, 229);
+        border-color: crimson;
+    }
+    #modal5 {
+        max-width: 300px;
+        height: 100px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 1px solid pink;
+        border-radius: 20px;
+    }
+    #close-modal-btn5 {
+        position: absolute;
+        margin-left: 265px;
+        margin-top: -85px;
+    }
+    .oscar_icon_small {
+        margin-left: 5px;
+        margin-top: 9px;
+        width: 37px;
+        height: 37px;
+    }
+    .title_oscar_small {
+        margin-top: -70px;
+        margin-left: 52px;
+        width: 86px;
+        height: 29px;
+    }
+    .title_oscar_country_small {
+        margin-top: -25px;
+        margin-left: 55px;
+        color: #BDBDBD;
+        width: 106px;
+        height: 18px;
+    }
+    .title_oscar_text_small {
+        height: 38px;
+        width: 252px;
+        margin-top: 5px;
+        margin-left: 12px;
+        border-radius: 0px;
+
+    }
+    #show-modal-btn6 {
+        border: none;
+        border-color: transparent;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+    #overlay6 {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgb(231, 229, 229);
+        border-color: crimson;
+    }
+    #modal6 {
+        max-width: 300px;
+        height: 100px;
+        margin: auto;
+        background-color: #F1F3F2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 1px solid pink;
+        border-radius: 20px;
+    }
+    #close-modal-btn6 {
+        position: absolute;
+        margin-left: 265px;
+        margin-top: -85px;
+    }
+    .fredericka_icon_small {
+        margin-left: 5px;
+        margin-top: 9px;
+        width: 37px;
+        height: 37px;
+    }
+    .title_fredericka_small {
+        margin-top: -70px;
+        margin-left: 52px;
+        width: 86px;
+        height: 29px;
+    }
+    .title_fredericka_country_small {
+        margin-top: -20px;
+        margin-left: 55px;
+        color: #BDBDBD;
+        width: 106px;
+        height: 18px;
+    }
+    .title_fredericka_text_small {
+        height: 38px;
+        width: 252px;
+        margin-top: 5px;
+        margin-left: 12px;
+        border-radius: 0px;
+
     }
 
     .testim_img_Oscar_horizontal_small {
